@@ -1,11 +1,9 @@
 import React from 'react'
 import '../style/ConAll.css'
 import { useTranslation } from 'react-i18next';
-import useLocalStorage from '../hooks/use-localstorage';
 function ConAll() {
          // язык
          const { t } = useTranslation();
-         const [language, setLanguage] = useLocalStorage('language', 'ru');
           // язык
   return (
     <section className='ConAll'>

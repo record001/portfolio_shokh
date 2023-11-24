@@ -2,14 +2,12 @@ import React from 'react'
 import '../style/ProjectCard.css'
 
 import { useTranslation } from 'react-i18next';
-import useLocalStorage from '../hooks/use-localstorage';
 
 
 function ProjectCard({title,img,text,btn}) {
 
     // язык
     const { t } = useTranslation();
-    const [language, setLanguage] = useLocalStorage('language', 'ru');
   // язык
 
 

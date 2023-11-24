@@ -5,13 +5,11 @@ import skills2 from '../img/Hero3.png'
 import skills3 from '../img/skills.png'
 import skills4 from '../img/skills2.png'
 import { useTranslation } from 'react-i18next';
-import useLocalStorage from '../hooks/use-localstorage';
 
 function Skills() {
 
      // язык
         const { t } = useTranslation();
-        const [language, setLanguage] = useLocalStorage('language', 'ru');
     // язык
   return (
     <section className='skills'>

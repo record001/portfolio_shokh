@@ -2,13 +2,11 @@ import React from 'react'
 import '../style/MeSkills.css'
 
 import { useTranslation } from 'react-i18next';
-import useLocalStorage from '../hooks/use-localstorage';
 
 
 function MeSkills() {
       // язык
       const { t } = useTranslation();
-      const [language, setLanguage] = useLocalStorage('language', 'ru');
         // язык
   return (
     <section className='MeSkills'>

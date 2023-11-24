@@ -1,7 +1,6 @@
 import React from 'react'
 import '../style/MeFact.css'
 import { useTranslation } from 'react-i18next';
-import useLocalStorage from '../hooks/use-localstorage';
 
 import me1 from '../img/Hero2.png'
 import me2 from '../img/me2.png'
@@ -11,7 +10,6 @@ import me3 from '../img/me3.png'
 function MeFact() {
        // язык
        const { t } = useTranslation();
-       const [language, setLanguage] = useLocalStorage('language', 'ru');
         // язык
   return (
     <section className='MeFact'>

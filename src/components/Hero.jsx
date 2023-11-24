@@ -1,7 +1,6 @@
 import React from 'react'
 import '../style/Hero.css'
 import { useTranslation } from 'react-i18next';
-import useLocalStorage from '../hooks/use-localstorage';
 import hero_1 from '../img/Hero1.png'
 import hero_2 from '../img/Hero2.png'
 import hero_3 from '../img/Hero3.png'
@@ -11,7 +10,6 @@ import { NavLink } from 'react-router-dom';
 function Hero() {
       // язык
       const { t } = useTranslation();
-      const [language, setLanguage] = useLocalStorage('language', 'ru');
 
 // язык
 

@@ -3,7 +3,6 @@ import '../style/Quote.css'
 import quote from '../img/legend.png'
 import quote2 from '../img/quote2.png'
 import { useTranslation } from 'react-i18next';
-import useLocalStorage from '../hooks/use-localstorage';
 
 
 function Quote() {
@@ -11,7 +10,6 @@ function Quote() {
 
           // язык
           const { t } = useTranslation();
-          const [language, setLanguage] = useLocalStorage('language', 'ru');
     
             // язык
 

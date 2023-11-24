@@ -1,11 +1,9 @@
 import React from 'react'
 import '../style/Soon.css'
 import { useTranslation } from 'react-i18next';
-import useLocalStorage from '../hooks/use-localstorage';
 function Soon() {
    // язык
    const { t } = useTranslation();
-   const [language, setLanguage] = useLocalStorage('language', 'ru');
 
 // язык
   return (

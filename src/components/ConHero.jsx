@@ -1,11 +1,9 @@
 import React from 'react'
 import '../style/ConHero.css'
 import { useTranslation } from 'react-i18next';
-import useLocalStorage from '../hooks/use-localstorage';
 function ConHero() {
         // язык
         const { t } = useTranslation();
-        const [language, setLanguage] = useLocalStorage('language', 'ru');
          // язык
   return (
     <section className='Conhero'>
@@ -47,7 +45,7 @@ function ConHero() {
                         {t('Message')}
                     </h2>
                     <a href="https://t.me/sert_070">{t('Telegram')}</a>
-                    <a href="">{t('Email')}</a>
+                    <a href="#!">{t('Email')}</a>
                 </div>
             </div>
         </div>

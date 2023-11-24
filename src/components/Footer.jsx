@@ -1,12 +1,10 @@
 import React from 'react'
 import '../style/Footer.css'
 import { useTranslation } from 'react-i18next';
-import useLocalStorage from '../hooks/use-localstorage';
 import { NavLink } from 'react-router-dom';
 function Footer() {
       // язык
       const { t } = useTranslation();
-      const [language, setLanguage] = useLocalStorage('language', 'ru');
      // язык
   return (
     <footer>

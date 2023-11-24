@@ -1,7 +1,6 @@
 import React from 'react'
 import '../style/MeHero.css'
 import { useTranslation } from 'react-i18next';
-import useLocalStorage from '../hooks/use-localstorage';
 import me1 from '../img/me1.png'
 import me2 from '../img/me2.png'
 import me3 from '../img/me3.png'
@@ -10,7 +9,6 @@ function MeHero() {
 
               // язык
               const { t } = useTranslation();
-              const [language, setLanguage] = useLocalStorage('language', 'ru');
         
         // язык
 

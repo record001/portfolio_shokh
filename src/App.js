@@ -1,7 +1,6 @@
 
 import './App.css';
 import Header from '../src/components/Header.jsx'
-import Home from './Pages/Home';
 import Footer from './components/Footer';
 import { Outlet } from 'react-router-dom';
 

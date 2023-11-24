@@ -1,7 +1,6 @@
 import React from 'react'
 import '../style/Project.css'
 import { useTranslation } from 'react-i18next';
-import useLocalStorage from '../hooks/use-localstorage';
 import ProjectCard from '../Small components/ProjectCard';
 import pr1 from '../img/pr1.png'
 import pr2 from '../img/pr2.png'
@@ -9,7 +8,6 @@ import pr3 from '../img/pr3.png'
 function Project() {
   // язык
     const { t } = useTranslation();
-    const [language, setLanguage] = useLocalStorage('language', 'ru');
   // язык
   return (
     <section className='project'>
